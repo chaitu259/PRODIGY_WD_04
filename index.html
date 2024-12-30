@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Chaitanya</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #FF5722;
+            --background-gradient: linear-gradient(135deg, #1E88E5, #C2185B);
+            --text-color: #ffffff;
+            --subheading-gradient: linear-gradient(90deg, #FF69B4, #1E90FF);
+            --button-hover-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            background: var(--background-gradient);
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            padding: 10px 15px;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: var(--secondary-color);
+            left: 0;
+            bottom: 0;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        section {
+            width: 90%;
+            margin: 20px 0;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            background: var(--subheading-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2rem;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .home {
+            text-align: center;
+        }
+
+        .home h1 {
+            font-size: 3rem;
+        }
+
+        .home p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .about {
+            text-align: left;
+        }
+
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .projects ul li {
+            margin: 10px 0;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <h1><br>Welcome to My Portfolio</h1>
+        <img src="https://img.freepik.com/premium-photo/stylish-man-flat-vector-profile-picture-ai-generated_606187-309.jpg" alt="Chaitanya's Photo" style="width: 250px; border-radius: 50%; margin: 20px 0;">
+        <p>Hi, I'm Chaitanya, a budding computer science engineer, proficient in C, Java, Python, and full-stack development, with good interpersonal skills and an ability to solve problems in teams and handle independent responsibility, looking for a position to contribute and grow with the organization while enhancing domain experience.<br><br></p>
+    </section>
+
+    <section id="about" class="about">
+        <h2><br>About Me</h2>
+        <p>I'm a 3rd-year Computer Science student at GITAM College with a strong foundation in web development. I love turning ideas into reality using code and designing user-friendly, responsive websites. My journey in web development has been fueled by curiosity and a desire to solve real-world problems with technology.<br></p>
+        <ul>
+            <li><strong>B Tech in Computer Science and Engineering (2022 – 2026):</strong> GITAM University, Visakhapatnam, CGPA: 8.53/10.0</li>
+            <li><strong>HSC (12th Std) (2022):</strong> Sri Vishwa Junior College, Visakhapatnam, Marks: 816/1000</li>
+            <li><strong>SSC (10th Std) (2020):</strong> KKR’s Gowtham School, Visakhapatnam<br><br></li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong style="color: #8A2BE2;">Circular Parking System :</strong> Designed and implemented a system to optimize parking space utilization using Python and Django.</li>
+            <li><strong style="color: #8A2BE2;">Portfolio Website :</strong> Developed a responsive portfolio website to showcase my skills and projects using HTML, CSS, and JavaScript.</li>
+            <li><strong style="color: #8A2BE2;">Inventory Management System :</strong> Built a user-friendly inventory management tool to track stock and sales efficiently.<br><br></li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to collaborate or have any questions, feel free to reach out!</p>
+        <ul>
+            <li><strong style="color: #8A2BE2;">Email :</strong> gorjachaitanya@gmail.com</li><br>
+            <li><strong style="color: #8A2BE2;">Phone :</strong> +91-9182959245</li><br>
+            <li><strong style="color: #8A2BE2;">LinkedIn :</strong> <a href="https://www.linkedin.com/in/chaitanya-gorja-a7714b33b/" target="_blank" style="color: var(--text-color);">linkedin.com/in/chaitanya</a></li><br>
+            <li><strong style="color: #8A2BE2;">GitHub :</strong> <a href="https://github.com/chaitanya" target="_blank" style="color: var(--text-color);">github.com/chaitanya</a><br><br></li>
+        </ul>
+    </section>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
